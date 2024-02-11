@@ -1,19 +1,19 @@
-https://leetcode.com/problems/two-sum/
+ Problem 1:   https://leetcode.com/problems/two-sum/
 
-// SOLUTION 
+// SOLUTION :-
 
-class Solution {
-    public int[] twoSum(int[] nums, int target) {
-            int n=nums.length-1;
-            
-           for(int i=0;i<=n-1;i++){
-               for(int k=i+1;k<=n;k++){
-                   if(nums[i]+nums[k]==target)
-                   {
-                       return new int[]{i,k};
-                   }
-               }
-           }
-               return new int[]{ };
-    }
-}
+            class Solution {
+                public int[] twoSum(int[] nums, int target) {
+                        int n=nums.length-1;
+                        
+                       for(int i=0;i<=n-1;i++){
+                           for(int k=i+1;k<=n;k++){
+                               if(nums[i]+nums[k]==target)
+                               {
+                                   return new int[]{i,k};
+                               }
+                           }
+                       }
+                           return new int[]{ };
+                }
+            }
