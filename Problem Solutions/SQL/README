@@ -1,4 +1,4 @@
-        PROBLEM:-  https://leetcode.com/problems/combine-two-tables/description/?envType=list&envId=o2qifkts
+        PROBLEM 1:-  https://leetcode.com/problems/combine-two-tables/description/?envType=list&envId=o2qifkts
 
     // SOLUTION:-  # Write your MySQL query statement below
                       Select p.firstname,p.lastname,a.city,a.state
