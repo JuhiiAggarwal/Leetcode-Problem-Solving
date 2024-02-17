@@ -33,3 +33,57 @@ public class Solution {
         return null;
     }
 }
+
+
+Problem2: https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
+
+Solution2: class Solution {
+           public int maxProfit(int[] prices)
+            {
+           int initialPrice=prices[0];
+           int maxProfit=0;
+           for(int i=1;i<prices.length;i++)
+         {
+           if(prices[i]<initialPrice)
+           {
+               initialPrice=prices[i];
+           }
+          else
+           {
+               maxProfit= Math.max(maxProfit,prices[i]-initialPrice);
+           }
+          }
+               return maxProfit;
+        }
+   }
+
+
+Problem3: https://leetcode.com/problems/palindrome-number/description/
+
+Solution3:     class Solution {
+                public boolean isPalindrome(int x) {
+                if(x==0){
+                   return true;
+                }
+                if(x<0||x%10==0){
+                   return false;
+                }
+               int rev=0;
+               int rem=0;
+               int temp=x;
+               while(temp!=0)
+               {
+                       rem=temp%10;
+                       rev=rev*10+rem;
+                       temp=temp/10;
+       
+               }
+                if(x==rev){
+                 return true;
+                }
+                   else{
+                    return false;
+                       }
+               }
+             }    
+
